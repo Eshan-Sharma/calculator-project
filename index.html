@@ -4,24 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div id="calculator">
-        <div id="one">1</div>
-        <div id="two">2</div>
-        <div id="three">3</div>
-        <div id="four">4</div>
-        <div id="five">5</div>
-        <div id="six">6</div>
-        <div id="seven">7</div>
-        <div id="eight">8</div>
-        <div id="nine">9</div>
-        <div onclick="subs()">-</div>
-        <div onclick="add()">+</div>
-        <div onclick="divide()">/</div>
-        <div onclick="mul()">*</div>
-        <div onclick="operate()">=</div>
-        <div>clear</div>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" id="">
+                </div>
+                <div>
+                    <input type="button" value="AC">
+                    <input type="button" value="DE">
+                    <input type="button" value=".">
+                    <input type="button" value="/">
+                </div>
+                <div>
+                    <input type="button" value="7">
+                    <input type="button" value="8">
+                    <input type="button" value="9">
+                    <input type="button" value="*">
+                </div>
+                <div>
+                    <input type="button" value="4">
+                    <input type="button" value="5">
+                    <input type="button" value="6">
+                    <input type="button" value="-">
+                </div>
+                <div>
+                    <input type="button" value="1">
+                    <input type="button" value="2">
+                    <input type="button" value="3">
+                    <input type="button" value="+">
+                </div>
+                <div>
+                    <input type="button" value="00">
+                    <input type="button" value="0">
+                    <input type="button" value="=" style="width: 125px;">
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
