@@ -30,3 +30,6 @@ form .display input{
     flex: 1;
     text-align: right;
 }
+form input.equal{
+    width: 125px;
+}
