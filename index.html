@@ -14,10 +14,10 @@
                     <input type="text" name="display" id="display" readonly>
                 </div>
                 <div>
-                    <input type="button" value="AC">
-                    <input type="button" value="DE">
-                    <input type="button" value=".">
-                    <input type="button" value="/">
+                    <input type="button" value="AC" onclick="document.getElementById('display').value = ''">
+                    <input type="button" value="DE" onclick="document.getElementById('display').value = document.getElementById('display').value.toString().slice(0,-1)">
+                    <input type="button" value="." onclick="document.getElementById('display').value += '.'">
+                    <input type="button" value="/" onclick="document.getElementById('display').value += '/'">
                 </div>
                 <div>
                     <input type="button" value="7" onclick="document.getElementById('display').value += '7'">
@@ -40,7 +40,7 @@
                 <div>
                     <input type="button" value="00" onclick="document.getElementById('display').value += '00'">
                     <input type="button" value="0" onclick="document.getElementById('display').value += '0'">
-                    <input type="button" value="=" class="equal">
+                    <input type="button" value="=" class="equal" onclick="document.getElementById('display').value = eval(document.getElementById('display').value)">
                 </div>
             </form>
         </div>
